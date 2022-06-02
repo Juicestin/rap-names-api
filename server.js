@@ -1,8 +1,10 @@
 //set up application
 const express = require('express')                  // application has access to express
 const app = express()                               // using express and storing into app
-const cors = require('cors')                        // handle cors errors
+const cors = require('cors')                        // have cors package
 const PORT = 8000
+
+app.use(cors())                                     // use cors package
 
 const rappers = {                                    //object for 21 savage
     '21 savage':{
